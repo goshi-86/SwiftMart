@@ -1,0 +1,11 @@
+<div>
+    <p>Hi I am shop component</p>
+</div>
+ <div class="grid grid-cols-5 gap-4">
+    @for(product of productList?.data; track product.id)
+    {
+        <app-browse-products [product]="product"></app-browse-products>
+    }
+ </div>
+
+
